@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment List</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/admin_sidebar.css">
+    <link rel="stylesheet" href="/styles/dashboard.css">
+    <link rel="stylesheet" href="/images/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <a>Đăng xuất</a>
+    </header>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="sidebar_inner">
+                <div class="flex sidebar_logo" href="/"><img height="60px" src="/images/logo1.png" alt=""></div>
+                <div class="sidebar_account flex gap--medium">
+                    <img src="/images/vidu.png" alt="" width="50px">
+                    <span>Quản trị viên</span>
+                </div>
+    
+                <div class="sidebar_actions">
+                    <a href="#" class="sidebar_link active">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        Thống kê
+                    </a>
+                    <div class="sidebar_link_group_container">
+                        <p href="#" class="sidebar_link sidebar_link_group_label">
+                            <span class="flex gap--medium">
+                                <i class="fa fa-folder" aria-hidden="true"></i>
+                                Quản lý
+                            </span>
+                            <i class="dropdown_icon fa fa-chevron-down" aria-hidden="true"></i>
+                        </p>
+                        <div class="sidebar_link_group">
+                            <a class="sidebar_link active" href="#">Người dùng</a>
+                            <a class="sidebar_link" href="#">Danh mục</a>
+                            <a class="sidebar_link" href="#">Thiết bị</a>
+                            <a class="sidebar_link" href="#">Phiếu đặt</a>
+                            <a class="sidebar_link" href="#">Đơn hàng</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </aside>
+    
+        <div class="main_content">
+            <div class="form-container">
+                <div class="title">
+                    <a><img src="/images/left.png"></a>
+                    <h2>Tạo phiếu đặt</h2>
+                </div>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="ten-san-pham">Tên khách hàng:</label>
+                        <input type="text" id="ten-san-pham" name="ten-san-pham">
+                    </div>
+                    <div class="form-group">
+                        <label for="so-dien-thoai">Số điện thoại giao:</label>
+                        <input type="text" id="so-dien-thoai" name="so-dien-thoai">
+                    </div>
+                    <div class="form-group">
+                        <label>Địa chỉ:</label>
+                        <div class="address-group">
+                            <select id="tinh-thanh" name="tinh-thanh">
+                                <option value="">Tỉnh/Thành</option>
+                                <option value="Đà Nẵng">Đà Nẵng</option>
+                            </select>
+                            <select id="quan-huyen" name="quan-huyen">
+                                <option value="">Quận/Huyện</option>
+                                <option value="Hải Châu">Hải Châu</option>
+                            </select>
+                            <select id="phuong-xa" name="phuong-xa">
+                                <option value="">Phường/Xã</option>
+                                <option value="Thanh Bình">Thanh Bình</option>
+                            </select>
+                        </div>
+                        <input type="text" id="dia-chi" name="dia-chi" placeholder="Địa chỉ">
+                    </div>
+                    <div class="device-info">
+                        <div class="title-and-actions" style="margin-top: 50px;">
+                            <h3>Danh sách phiếu đặt</h3>
+                            <div class="actions">
+                                <a class="add-btn">
+                                    <img src="/images/add.png" class="icon">
+                                    <span>Thêm</span>
+                                </a>
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Mã chi tiết phiếu đặt</th>
+                                    <th>Tên thiết bị</th>
+                                    <th>Số lượng</th>
+                                    <th>Giá thuê</th>
+                                    <th>Ngày bắt đầu</th>
+                                    <th>Ngày kết thúc</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CTPD01</td>
+                                    <td>Máy nâng</td>
+                                    <td>5</td>
+                                    <td>400000</td>
+                                    <td>29/05/2024</td>
+                                    <td>30/05/2024</td>
+                                    <td>
+                                        <button class="edit-btn">
+                                            <img src="/images/pen.png">
+                                        </button>
+                                        <button class="delete-btn">
+                                            <img src="/images/bin.png">
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Lưu lại</button>
+                        <button type="button" class="btn-secondary">Hủy bỏ</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/js/admin_sidebar.js"></script>
+</body>
+</html>

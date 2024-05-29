@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment List</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/admin_sidebar.css">
+    <link rel="stylesheet" href="/styles/dashboard.css">
+    <link rel="stylesheet" href="/images/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <a>Đăng xuất</a>
+    </header>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="sidebar_inner">
+                <div class="flex sidebar_logo" href="/"><img height="60px" src="/images/logo1.png" alt=""></div>
+                <div class="sidebar_account flex gap--medium">
+                    <img src="/images/vidu.png" alt="" width="50px">
+                    <span>Quản trị viên</span>
+                </div>
+    
+                <div class="sidebar_actions">
+                    <a href="#" class="sidebar_link active">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        Thống kê
+                    </a>
+                    <div class="sidebar_link_group_container">
+                        <p href="#" class="sidebar_link sidebar_link_group_label">
+                            <span class="flex gap--medium">
+                                <i class="fa fa-folder" aria-hidden="true"></i>
+                                Quản lý
+                            </span>
+                            <i class="dropdown_icon fa fa-chevron-down" aria-hidden="true"></i>
+                        </p>
+                        <div class="sidebar_link_group">
+                            <a class="sidebar_link active" href="#">Người dùng</a>
+                            <a class="sidebar_link" href="#">Danh mục</a>
+                            <a class="sidebar_link" href="#">Thiết bị</a>
+                            <a class="sidebar_link" href="#">Phiếu đặt</a>
+                            <a class="sidebar_link" href="#">Đơn hàng</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </aside>
+    
+        <div class="main_content">
+            <div class="title-and-actions">
+                <h2>Danh sách phiếu đặt</h2>
+                <div class="actions">
+                    <a class="add-btn">
+                        <img src="/images/add.png" class="icon">
+                        <span>Thêm</span>
+                    </a>
+                    <button class="download-btn">
+                        <img src="/images/download.png" class="icon">
+                        <span>Dowload PDF Report</span>
+                    </button>
+                </div>
+            </div>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Tìm kiếm theo mã thiết bị hoặc tên">
+                    <button class="filter-btn" onclick="toggleDropdown()">
+                        <img src="/images/filter.png" class="icon">
+                        <span>Lọc</span>
+                    </button>
+                </div>
+                <div id="dropdown-filter" class="dropdown-filter-content">
+                    <button class="dropdown-filter-item" onclick="toggleDropdownMenu()">
+                        <span>Trạng thái</span>
+                        <img src="/images/drop-down-arrow.png">
+                    </button>
+                    <div id="dropdown-menu" class="dropdown-menu">
+                        <button class="dropdown-item" style="border-top: none;">Đang chờ xác nhận</button>
+                        <button class="dropdown-item" style="border-bottom: none;">Đã xác nhận</button>
+                    </div>
+                    <input type="date" class="dropdown-filter-item">
+                </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã phiếu đặt</th>
+                        <th>Mã người đặt</th>
+                        <th>Ngày tạo phiếu</th>
+                        <th>Trạng thái</th>
+                        <th>Địa chỉ giao</th>
+                        <th>Số điện thoại giao</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PD01</td>
+                        <td>TK01</td>
+                        <td>29/05/2024</td>
+                        <td><span>Đang chờ xác nhận</span></td>
+                        <td>33 Nguyễn Khoa, Hội An</td>
+                        <td>0769779154</td>
+                        <td>
+                            <button class="edit-btn">
+                                <img src="/images/pen.png">
+                            </button>
+                            <button class="delete-btn">
+                                <img src="/images/bin.png">
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+    <script src="/js/admin_sidebar.js"></script>
+</body>
+</html>
