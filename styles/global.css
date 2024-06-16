@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
-    font-family: "K2D", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
     --z-index-header: 100;
@@ -31,6 +32,7 @@
 a,
 button {
     font-size: inherit;
+    font-family: "Montserrat", sans-serif;
     cursor: pointer;
 }
 .body {
@@ -46,5 +48,5 @@ button {
     text-decoration: line-through;
 }
 .red-text {
-    color: #E80C27;
+    color: #D10024;
 }

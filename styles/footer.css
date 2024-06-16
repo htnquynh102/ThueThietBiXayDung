@@ -1,6 +1,6 @@
 .footer {
-    padding: 2em;
-    background-color: #000000;
+    padding: 2em 2em 4em;
+    background-color: #15161D;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
@@ -14,17 +14,16 @@
 
 .footer ul li {
     list-style: none;
-    font-weight: 400;
 }
 
 .footer ul li a {
-    font-weight: 200 !important;
     font-style: normal;
-    line-height: 1.25;
+    line-height: 1.2;
     display: inline-block;
     padding: 0.25em 0;
     text-decoration: none;
-    color: #fff;
+    color: #B9BABC;
+    font-size: 14px;
 }
 
 .footer__info {
@@ -36,7 +35,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #B69352;
+    color: #D10024;
     align-self: center;
     margin-block: 0.5em;
 }
@@ -45,9 +44,9 @@
     content: '';
     margin-block-start: 0.5em;
     display: block;
-    height: 0.25em;
+    height: 0.2em;
     width: 20%;
-    background-color: #B69352;
+    background-color: #D10024;
     border-radius: 1em;
 }
 
@@ -72,7 +71,7 @@
     outline: none;
 }
 .footer__social_media_email button {
-    background-color: #B69352;
+    background-color: #D10024;
     border: none;
     height: 2em;
     width: 2em;

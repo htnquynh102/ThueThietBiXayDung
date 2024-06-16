@@ -74,10 +74,8 @@ function initCartPreviewer() {
     bg.addEventListener('click', handleClose)
 }
 
-
+initCartPreviewer()
 initLoginForm()
 initSignUpForm()
-initCartPreviewer()
-
 
 

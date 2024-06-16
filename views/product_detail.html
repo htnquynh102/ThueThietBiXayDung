@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/product.css">
+    <link rel="stylesheet" href="/images/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/address_select.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/styles/product_detail.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header_top flex">
+            <div class="header_top_left flex gap--small hide_on_mobile">
+                <img class="image_icon" src="/images/header_location.png" alt="">
+                <p>48 Cao Thắng, Hải Châu, Đà Nẵng</p>
+            </div>
+            <div class="header_top_right flex gap--medium">
+                <a href="tel:1900 1020" class="flex gap--small">
+                    <img class="image_icon" src="/images/header_phone.png" alt="">
+                    <p>1900 1020</p>
+                </a>
+                <a href="mailto:tandtgroup@gmail.com" class="flex gap--small">
+                    <img class="image_icon" src="/images/header_mail.png" alt="">
+                    <p>tandtgroup@gmail.com</p>
+                </a>
+            </div>
+        </div>
+        <div class="header_center flex">
+            <div class="header_center_left flex gap--medium">
+                <div class="header_logo">
+                    <img src="/images/logo1.png" alt="">
+                </div>
+                    <a class="hide_on_mobile" href="">Trang chủ</a>
+                    <a class="hide_on_mobile" href="">Giới thiệu</a>
+                    <a class="hide_on_mobile" href="">Liên hệ</a>
+                
+                
+            </div>
+            <div class="header_center_right  flex gap--medium">
+                <button class="search_icon_button">
+                    <img class="image_icon" src="/images/header_search_icon.png" alt="">
+                </button>
+                <button class="flex gap--small open_cart_button">
+                    <span class="header_center_cart_icon">
+                        <img class="image_icon" src="/images/header_cart_icon.png" alt="">
+                        <sup>0</sup>
+                    </span>
+                    <span class="hide_on_mobile">Giỏ hàng</span>
+                </button>
+                <button class="flex gap--small open_login_form_btn"> 
+                    <img class="image_icon" src="/images/header_user_icon.png" alt="">
+                    <span class="hide_on_mobile">Đăng nhập</span>
+                </button>
+        
+            </div>
+            <form class="header_center_bottom">
+                <img src="/images/header_search_icon.png" alt="" width="24px">
+                <input class="header_center_searchbar" type="text" placeholder="Tìm kiếm sản phẩm" name="" id="">
+            </form>
+        </div>
+        <div class="header_bottom">
+            <ul class="header_bottom_inner flex">
+                <li class="header_bottom_label">
+                    <a>DANH MỤC</a>
+                </li>
+                <li class="header_bottom_label">
+                    <a>DANH MỤC</a>
+                </li>
+                <li class="header_bottom_label">
+                    <a>DANH MỤC</a>
+                </li>
+                <li class="header_bottom_label">
+                    <a>DANH MỤC</a>
+                </li>
+                <li class="header_bottom_label">
+                    <a>DANH MỤC</a>
+                </li>
+                <li class="header_bottom_label">
+                    <a>DANH MỤC</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <nav id="sticky_nav">
+        <button class="menu_button">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            Danh mục thiết bị
+        </button>
+
+        <div class="search_box">
+            <form class="search_bar">
+                <input class="search_text" type="text" placeholder="Tìm kiếm thiết bị..." name="" id="">
+                <button class="search_btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+
+        </div>
+
+        <div class="support_hotline flex">
+            <i class="fa fa-phone-square" aria-hidden="true"></i>
+            <div class="hotline_number flex">Hỗ trợ khách hàng<span>1900 1020</span></div>
+        </div>
+
+        <ul id="sticky_menu" class="hidden">
+            <li><a>DANH MỤC</a></li>
+            <li><a>DANH MỤC</a></li>
+            <li><a>DANH MỤC</a></li>
+            <li><a>DANH MỤC</a></li>
+            <li><a>DANH MỤC</a></li>
+            <li><a>DANH MỤC</a></li>      
+
+        </ul>
+    </nav>
+
+    <main>
+        <div class="main_content">
+            <div class="product ">
+                <div class="product_images flex">
+                    <div class="zoom_image">
+                        <img height="100%" src="/images/vidu.png" class="showed_image">
+
+                    </div>
+
+                    <div class="list_images">
+                        <img src="/images/banner.png" class="image_item border_image">
+                        <img src="/images/vidu2.png" class="image_item">
+                        <img src="/images/about_us_img.jpg" class="image_item">
+
+                    </div>
+
+                </div>
+                <div class="product_info">
+                    <h2 class="product_name">Xe lu dắt tay Sakai</h2>
+                    <p class="product_brand">Thương hiệu: <span>Sakai</span></p>
+                    <p class="product_code">Mã sản phẩm: <span>SP001</span></p>
+                    <p class="product_quantity">Số lượng: <span>20</span></p>
+                    <p class="product_rent_cost">Giá thuê: <span class="price">2076000</span> /ngày</p>
+                   
+                    <div class="product_action flex">
+                        <button class="add_cart_btn">Thêm vào giỏ</button>
+                        <button class="order_btn">Đặt ngay</button>
+                    </div>
+
+                    <p class="contact"><i class="fa fa-phone"></i> Liên hệ tư vấn và đặt mua: <span>1900 1020</span></p>
+
+                </div>
+
+                <div class="product_description">
+                    <h3>Mô tả</h3>
+                    <p>Xe lu tay đến từ thương hiệu Sakai Nhật Bản, là dòng xe được tin dùng tại thị trường Việt Nam từ trước đến nay. Sản phẩm với ưu điểm là dễ sử dụng, công suất hoạt động lớn và có độ bền cao. </p>
+                </div>
+
+            </div>
+
+            <div class="recommended_products">
+                <h3>Sản phẩm liên quan</h3>
+            <div class="list_products">
+                <div class="product_item">
+                    <div class="product_img">
+                        <img src="/images/banner1.png">
+                    </div>
+                    <p class="product_name">Xe lu dắt tay Sakai</p>
+                    <p class="product_rent_cost"><span class="price">2076000</span>/ngày </p>
+                    <div class="product_action flex">
+                        <button class="add_cart_btn">Thêm vào giỏ</button>
+                        <button class="view_more_btn">Xem thêm</button>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="product_img">
+                        <img src="/images/banner1.png">
+                    </div>
+                    <p class="product_name">Xe lu dắt tay Sakai</p>
+                    <p class="product_rent_cost"><span class="price">2076000</span>/ngày </p>
+                    <div class="product_action flex">
+                        <button class="add_cart_btn">Thêm vào giỏ</button>
+                        <button class="view_more_btn">Xem thêm</button>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="product_img">
+                        <img src="/images/banner1.png">
+                    </div>
+                    <p class="product_name">Xe lu dắt tay Sakai</p>
+                    <p class="product_rent_cost"><span class="price">2076000</span>/ngày </p>
+                    <div class="product_action flex">
+                        <button class="add_cart_btn">Thêm vào giỏ</button>
+                        <button class="view_more_btn">Xem thêm</button>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="product_img">
+                        <img src="/images/banner1.png">
+                    </div>
+                    <p class="product_name">Xe lu dắt tay Sakai</p>
+                    <p class="product_rent_cost"><span class="price">2076000</span>/ngày </p>
+                    <div class="product_action flex">
+                        <button class="add_cart_btn">Thêm vào giỏ</button>
+                        <button class="view_more_btn">Xem thêm</button>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <address class="footer__info">
+            <h5 class="footer__headeing">
+                LIÊN HỆ VỚI T&T
+            </h5>
+            <ul>
+                <li><a href="#">48 Cao Thắng, Hải Châu, Đà Nẵng</a></li>
+                <li><a href="#">1900 1020</a></li>
+                <li><a href="#">noithattandt@gmail.com</a></li>
+            </ul>
+            <div class="footer__logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+        </address>
+        <div class="footer__about">
+            <h5 class="footer__headeing">VỀ CHÚNG TÔI</h5>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="footer__support">
+            <h5 class="footer__headeing">HỖ TRỢ KHÁCH HÀNG</h5>
+            <ul>
+                <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                <li><a href="#">Giao hàng & thanh toán</a></li>
+                <li><a href="#">Chính sách đổi trả & bảo hành</a></li>
+                <li><a href="#">Giải quyết khiếu nại</a></li>
+            </ul>
+        </div>
+        <div class="footer__social_media">
+            <h5 class="footer__headeing">KẾT NỐI VỚI CHÚNG TÔI</h5>
+            <ul class="flex footer__social_media_icons">
+                <li>
+                    <a href="#">
+                        <svg width="37px" height="37px" viewBox="0 0 48 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <circle cx="24" cy="24" r="20" fill="#ff75c3"></circle>
+                                <path
+                                    d="M24 14.1622C27.2041 14.1622 27.5837 14.1744 28.849 14.2321C30.019 14.2855 30.6544 14.481 31.0773 14.6453C31.6374 14.863 32.0371 15.123 32.457 15.5429C32.877 15.9629 33.137 16.3626 33.3547 16.9227C33.519 17.3456 33.7145 17.981 33.7679 19.1509C33.8256 20.4163 33.8378 20.7958 33.8378 23.9999C33.8378 27.2041 33.8256 27.5836 33.7679 28.849C33.7145 30.019 33.519 30.6543 33.3547 31.0772C33.137 31.6373 32.877 32.0371 32.4571 32.457C32.0371 32.8769 31.6374 33.1369 31.0773 33.3546C30.6544 33.519 30.019 33.7144 28.849 33.7678C27.5839 33.8255 27.2044 33.8378 24 33.8378C20.7956 33.8378 20.4162 33.8255 19.151 33.7678C17.981 33.7144 17.3456 33.519 16.9227 33.3546C16.3626 33.1369 15.9629 32.8769 15.543 32.457C15.1231 32.0371 14.863 31.6373 14.6453 31.0772C14.481 30.6543 14.2855 30.019 14.2321 28.849C14.1744 27.5836 14.1622 27.2041 14.1622 23.9999C14.1622 20.7958 14.1744 20.4163 14.2321 19.1509C14.2855 17.981 14.481 17.3456 14.6453 16.9227C14.863 16.3626 15.123 15.9629 15.543 15.543C15.9629 15.123 16.3626 14.863 16.9227 14.6453C17.3456 14.481 17.981 14.2855 19.151 14.2321C20.4163 14.1744 20.7959 14.1622 24 14.1622ZM24 12C20.741 12 20.3323 12.0138 19.0524 12.0722C17.7752 12.1305 16.9028 12.3333 16.1395 12.63C15.3504 12.9366 14.6812 13.3469 14.0141 14.0141C13.3469 14.6812 12.9366 15.3504 12.63 16.1395C12.3333 16.9028 12.1305 17.7751 12.0722 19.0524C12.0138 20.3323 12 20.741 12 23.9999C12 27.259 12.0138 27.6676 12.0722 28.9475C12.1305 30.2248 12.3333 31.0971 12.63 31.8604C12.9366 32.6495 13.3469 33.3187 14.0141 33.9859C14.6812 34.653 15.3504 35.0633 16.1395 35.3699C16.9028 35.6666 17.7752 35.8694 19.0524 35.9277C20.3323 35.9861 20.741 35.9999 24 35.9999C27.259 35.9999 27.6677 35.9861 28.9476 35.9277C30.2248 35.8694 31.0972 35.6666 31.8605 35.3699C32.6496 35.0633 33.3188 34.653 33.9859 33.9859C34.653 33.3187 35.0634 32.6495 35.37 31.8604C35.6667 31.0971 35.8695 30.2248 35.9278 28.9475C35.9862 27.6676 36 27.259 36 23.9999C36 20.741 35.9862 20.3323 35.9278 19.0524C35.8695 17.7751 35.6667 16.9028 35.37 16.1395C35.0634 15.3504 34.653 14.6812 33.9859 14.0141C33.3188 13.3469 32.6496 12.9366 31.8605 12.63C31.0972 12.3333 30.2248 12.1305 28.9476 12.0722C27.6677 12.0138 27.259 12 24 12Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M24.0059 17.8433C20.6026 17.8433 17.8438 20.6021 17.8438 24.0054C17.8438 27.4087 20.6026 30.1675 24.0059 30.1675C27.4092 30.1675 30.1681 27.4087 30.1681 24.0054C30.1681 20.6021 27.4092 17.8433 24.0059 17.8433ZM24.0059 28.0054C21.7968 28.0054 20.0059 26.2145 20.0059 24.0054C20.0059 21.7963 21.7968 20.0054 24.0059 20.0054C26.2151 20.0054 28.0059 21.7963 28.0059 24.0054C28.0059 26.2145 26.2151 28.0054 24.0059 28.0054Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M31.8507 17.5963C31.8507 18.3915 31.206 19.0363 30.4107 19.0363C29.6154 19.0363 28.9707 18.3915 28.9707 17.5963C28.9707 16.801 29.6154 16.1562 30.4107 16.1562C31.206 16.1562 31.8507 16.801 31.8507 17.5963Z"
+                                    fill="white"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg height="33px" width="33px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 112.196 112.196"
+                            xml:space="preserve" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <circle style="fill:#8fb2ff;" cx="56.098" cy="56.098" r="56.098"></circle>
+                                    <path style="fill:#FFFFFF;"
+                                        d="M70.201,58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34 c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.668-3.217,3.513v7.585h11.334L70.201,58.294z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="39px" height="39px" viewBox="0 0 48 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <circle cx="24" cy="24" r="20" fill="#ff5757"></circle>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M35.3005 16.3781C35.6996 16.7772 35.9872 17.2739 36.1346 17.8187C36.9835 21.2357 36.7873 26.6324 36.1511 30.1813C36.0037 30.7261 35.7161 31.2228 35.317 31.6219C34.9179 32.021 34.4212 32.3086 33.8764 32.456C31.8819 33 23.8544 33 23.8544 33C23.8544 33 15.8269 33 13.8324 32.456C13.2876 32.3086 12.7909 32.021 12.3918 31.6219C11.9927 31.2228 11.7051 30.7261 11.5577 30.1813C10.7038 26.7791 10.9379 21.3791 11.5412 17.8352C11.6886 17.2903 11.9762 16.7936 12.3753 16.3945C12.7744 15.9954 13.2711 15.7079 13.8159 15.5604C15.8104 15.0165 23.8379 15 23.8379 15C23.8379 15 31.8654 15 33.8599 15.544C34.4047 15.6914 34.9014 15.979 35.3005 16.3781ZM27.9423 24L21.283 27.8571V20.1428L27.9423 24Z"
+                                    fill="white"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+
+            </ul>
+            <form class="footer__social_media_email">
+                <input type="email" placeholder="Email của bạn" name="" id="">
+                <button type="submit">
+                    <img src="./images/send_icon.svg" alt="">
+                </button>
+            </form>
+        </div>
+    </footer>
+
+    <form class="login_form">
+        <div class="login_form_header">
+            <h5>ĐĂNG NHẬP TÀI KHOẢN</h5>
+            <img class="login_form_close_icon" src="/images/close_icon.svg" alt="">
+        </div>
+
+        <input class="login_form_input" type="email" placeholder="Email">
+
+        <input class="login_form_input" type="password" placeholder="Mật khẩu">
+        
+        <div class="flex foget_pass_n_save">
+            <div class="flex">
+                <input type="checkbox" name="" id="is_save">
+                <label for="is_save">Lưu thông tin đăng nhập</label>
+            </div>
+            <a href="#">Quên mật khẩu</a>
+        </div>
+
+        <button class="login_submit_button" type="submit">ĐĂNG NHẬP</button>
+        
+        <p>Khách hàng mới? <a href="#" class="open_signup_form_btn red-text bold">Tạo tài khoản</a></p>
+    </form>
+    <div class="blur_overlay login"></div>
+
+
+    <form class="signup_form">
+        <div class="signup_form__header">
+            <h5>ĐĂNG KÝ TÀI KHOẢN</h5>
+            <img class="signup_form_close_icon" src="/images/close_icon.svg" alt="">
+        </div>
+        <input class="signup_form__input" type="name" placeholder="Họ tên">
+        <input class="signup_form__input" type="email" placeholder="Email">
+        <input class="signup_form__input" type="password" placeholder="Mật khẩu">
+
+        <div class="select-group">
+            <div class="select-menu">
+                <div class="select" id="province">
+                    <span>Tỉnh/Thành Phố</span>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+                <div class="options-list"></div>
+            </div>
+            <div class="select-menu">
+                <div class="select" id="district">
+                    <span>Quận/Huyện</span>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+                <div class="options-list"></div>
+            </div>
+            <div class="select-menu">
+                <div class="select" id="ward">
+                    <span>Xã/Phường</span>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+                <div class="options-list"></div>
+            </div>
+        </div>
+
+        <input class="signup_form__input" type="text"
+                placeholder="Số nhà, tên tòa nhà, tên đường,..">
+        <!-- <input class="signup_form__input" type="address" placeholder="Số nhà, tên tòa nhà, tên đường,.."> -->
+        <button class="signup__submit_button" type="submit">ĐĂNG KÝ</button>
+        <p>Đã có tài khoản? <a href="#" class="red-text bold open_login_form_btn"> Đăng nhập</a></p>
+    </form>
+    <div class="blur_overlay signup"></div>
+
+
+    <div class="cart_previewer">
+        <h3>GIỎ HÀNG</h3>
+        <div class="cart_previewer_products">
+            <div class="cart_previewer_product">
+                <div class="cart_previewer_product_img">
+                    <img src="/images/vidu2.png" alt="">
+                </div>
+                <div class="cart_previewer_product_info">
+                    <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor dolordolordolorsit amet </h4>
+                    <span class="price cart_previewer_product_price">276000</span>
+                    <div class="cart_previewer_remove_btn">
+                        <img src="/images/close_icon.svg" width="10px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="cart_previewer_product">
+                <div class="cart_previewer_product_img">
+                    <img src="/images/vidu.png" alt="">
+                </div>
+                <div class="cart_previewer_product_info">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <span class="price cart_previewer_product_price">276000</span>
+                    <div class="cart_previewer_remove_btn">
+                        <img src="/images/close_icon.svg" width="10px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="cart_previewer_product">
+                <div class="cart_previewer_product_img">
+                    <img src="/images/banner.png" alt="">
+                </div>
+                <div class="cart_previewer_product_info">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <span class="price cart_previewer_product_price">276000</span>
+                    <div class="cart_previewer_remove_btn">
+                        <img src="/images/close_icon.svg" width="10px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="cart_previewer_product">
+                <div class="cart_previewer_product_img">
+                    <img src="/images/vidu.png" alt="">
+                </div>
+                <div class="cart_previewer_product_info">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <span class="price cart_previewer_product_price">276000</span>
+                    <div class="cart_previewer_remove_btn">
+                        <img src="/images/close_icon.svg" width="10px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="cart_previewer_product">
+                <div class="cart_previewer_product_img">
+                    <img src="/images/vidu.png" alt="">
+                </div>
+                <div class="cart_previewer_product_info">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <span class="price cart_previewer_product_price">276000</span>
+                    <div class="cart_previewer_remove_btn">
+                        <img src="/images/close_icon.svg" width="10px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="cart_previewer_product">
+                <div class="cart_previewer_product_img">
+                    <img src="/images/vidu.png" alt="">
+                </div>
+                <div class="cart_previewer_product_info">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <span class="price cart_previewer_product_price">276000</span>
+                    <div class="cart_previewer_remove_btn">
+                        <img src="/images/close_icon.svg" width="10px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="cart_previewer_product">
+                <div class="cart_previewer_product_img">
+                    <img src="/images/vidu.png" alt="">
+                </div>
+                <div class="cart_previewer_product_info">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <span class="price cart_previewer_product_price">276000</span>
+                    <div class="cart_previewer_remove_btn">
+                        <img src="/images/close_icon.svg" width="10px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="cart_previewer_product">
+                <div class="cart_previewer_product_img">
+                    <img src="/images/vidu.png" alt="">
+                </div>
+                <div class="cart_previewer_product_info">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <span class="price cart_previewer_product_price">276000</span>
+                    <div class="cart_previewer_remove_btn">
+                        <img src="/images/close_icon.svg" width="10px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="cart_previewer_product">
+                <div class="cart_previewer_product_img">
+                    <img src="/images/vidu.png" alt="">
+                </div>
+                <div class="cart_previewer_product_info">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <span class="price cart_previewer_product_price">276000</span>
+                    <div class="cart_previewer_remove_btn">
+                        <img src="/images/close_icon.svg" width="10px" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button href="" class="">TẠO PHIẾU ĐẶT</button>
+    </div>
+    <div class="blur_overlay cart"></div>
+
+    <script src="/js/header.js"></script>
+    <script src="/js/sticky_nav.js"></script>
+    <script src="/js/addr.js"></script>
+    <script src="/js/product_detail.js"></script>
+    <script src="/js/price_format.js"></script>
+
+
+    
+</body>
+</html>
